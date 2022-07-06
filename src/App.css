@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+@import url('./components/InstructionModal/instructionModal.css');
+body {
+  background-color: #15133C;
+  color: var(--color-tertiary);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.type-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.alphabet-output {
+  background-color: var(--color-tertiary);
+  color: var(--color-success);
+  font-weight: 700;
+  font-size: 6rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 12rem;
+  width: 100%;
+  border-radius: var(--border-radius-3);
 }
 
-.App-link {
-  color: #61dafb;
+.type-timer > *:first-child{
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.type-container .input-grp {
+  display: flex;
+}
+
+.type-container .input-grp > input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: var(--color-tertiary);
+  box-shadow: none;
+  border: none;
+}
+
+.type-container .input-grp > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
