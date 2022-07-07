@@ -80,7 +80,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    console.log("here");
     if (correctlyAnswered >= MAX_SCORE) {
       stopCountDown();
       if (isBestScore(timer, bestScore)) {
@@ -116,7 +115,12 @@ function App() {
           </p>
         </div>
         <div className="input-grp">
-          <input type="text" value={userInput} onKeyDown={handleKeyDown} />
+          <input
+            type="text"
+            placeholder="Type here"
+            value={userInput}
+            onKeyDown={handleKeyDown}
+          />
           <button className="btn secondary" onClick={handleReset}>
             reset
           </button>
