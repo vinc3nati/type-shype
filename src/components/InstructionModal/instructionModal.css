@@ -24,3 +24,7 @@
 .instruction-icon {
     color: var(--color-warning)
 }
+
+.modal-content {
+    height: fit-content;
+}
